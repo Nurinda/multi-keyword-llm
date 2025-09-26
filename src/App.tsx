@@ -48,7 +48,7 @@ function App() {
       try {
         // In production, this would make actual API calls to check visibility
         // For now, we'll simulate with a more realistic approach
-        const searchQuery = `site:kumparan.com ${keyword}`;
+        const searchQuery = `site:https://kumparan.com/rizky-ega-pratama ${keyword}`;
         
         // Simulate API call with realistic timing
         await new Promise(resolve => setTimeout(resolve, 200 + Math.random() * 300));
