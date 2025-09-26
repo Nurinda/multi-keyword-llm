@@ -52,7 +52,7 @@ export default function SearchForm({ onSingleKeywordSearch, onMultiKeywordSearch
           Cek Visibilitas Konten di Platform AI
         </h2>
         <p className="text-gray-600">
-          Periksa visibilitas konten kumparan.com dengan satu kata kunci atau beberapa kata kunci sekaligus
+          Periksa visibilitas konten dari profil Rizky Ega Pratama di kumparan.com dengan satu kata kunci atau beberapa kata kunci sekaligus
         </p>
       </div>
 
@@ -188,7 +188,7 @@ export default function SearchForm({ onSingleKeywordSearch, onMultiKeywordSearch
       
       <div className="mt-6 text-sm text-gray-500 text-center">
         <p>
-          Platform yang dicek: Google AI Overview, ChatGPT, Perplexity, Gemini, Microsoft Copilot, Claude
+          Platform yang dicek: Google AI Overview, AI Mode, SearchGPT, ChatGPT, Perplexity, Gemini, Microsoft Copilot, Claude
         </p>
       </div>
     </div>

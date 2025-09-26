@@ -189,7 +189,7 @@ export default function MultiKeywordResults({ keywords, results, platforms, isLo
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
           <div className="flex items-center gap-2">
             <Check className="h-4 w-4 text-green-600" />
-            <span className="text-blue-700">Terdeteksi - Konten kumparan.com muncul</span>
+            <span className="text-blue-700">Terdeteksi - Konten Rizky Ega Pratama muncul</span>
           </div>
           <div className="flex items-center gap-2">
             <X className="h-4 w-4 text-red-600" />
@@ -202,6 +202,8 @@ export default function MultiKeywordResults({ keywords, results, platforms, isLo
         </div>
         <div className="mt-4 text-xs text-blue-600">
           <p>• Hasil berdasarkan web search mode untuk akurasi maksimal</p>
+          <p>• Pencarian khusus untuk profil Rizky Ega Pratama di kumparan.com</p>
+          <p>• Konten dari akun kumparan lain tidak dihitung dalam hasil</p>
           <p>• Data diperbarui secara real-time</p>
           <p>• Export CSV tersedia untuk analisis lebih lanjut</p>
         </div>

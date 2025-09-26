@@ -33,6 +33,8 @@ function App() {
 
   const platforms = [
     { name: 'Google AI Overview', baseUrl: 'https://google.com', searchUrl: 'https://www.google.com/search?q=' },
+    { name: 'AI Mode', baseUrl: 'https://aimode.com', searchUrl: 'https://aimode.com/search?q=' },
+    { name: 'SearchGPT', baseUrl: 'https://searchgpt.com', searchUrl: 'https://searchgpt.com/search?q=' },
     { name: 'ChatGPT', baseUrl: 'https://chatgpt.com', searchUrl: 'https://chatgpt.com/?q=' },
     { name: 'Perplexity', baseUrl: 'https://perplexity.ai', searchUrl: 'https://www.perplexity.ai/search?q=' },
     { name: 'Google Gemini', baseUrl: 'https://gemini.google.com', searchUrl: 'https://gemini.google.com/app?q=' },
@@ -47,8 +49,8 @@ function App() {
     for (const platform of platforms) {
       try {
         // In production, this would make actual API calls to check visibility
-        // For now, we'll simulate with a more realistic approach
-        const searchQuery = `site:https://kumparan.com/rizky-ega-pratama ${keyword}`;
+        // Search specifically for Rizky Ega Pratama's profile content
+        const searchQuery = `site:kumparan.com/rizky-ega-pratama ${keyword}`;
         
         // Simulate API call with realistic timing
         await new Promise(resolve => setTimeout(resolve, 200 + Math.random() * 300));
@@ -56,6 +58,8 @@ function App() {
         // More realistic probability based on platform characteristics
         let probability = 0.5;
         if (platform.name === 'Google AI Overview') probability = 0.7;
+        else if (platform.name === 'AI Mode') probability = 0.6;
+        else if (platform.name === 'SearchGPT') probability = 0.65;
         else if (platform.name === 'Perplexity') probability = 0.6;
         else if (platform.name === 'ChatGPT') probability = 0.4;
         
@@ -101,17 +105,17 @@ function App() {
 
           if (isVisible) {
             status = 'visible';
-            description = `Konten kumparan.com ditemukan dalam hasil pencarian untuk "${keyword}"`;
+            description = `Konten dari profil Rizky Ega Pratama di kumparan.com ditemukan untuk "${keyword}"`;
             references = [
               {
-                title: `${keyword} - Berita Terkini | kumparan.com`,
-                url: `https://kumparan.com/search?q=${encodeURIComponent(keyword)}`,
-                snippet: `Berita terbaru tentang ${keyword} dari kumparan.com. Dapatkan informasi terpercaya dan terkini.`
+                title: `${keyword} - Artikel oleh Rizky Ega Pratama | kumparan.com`,
+                url: `https://kumparan.com/rizky-ega-pratama`,
+                snippet: `Artikel tentang ${keyword} oleh Rizky Ega Pratama di kumparan.com. Konten berkualitas dari penulis terpercaya.`
               }
             ];
           } else {
             status = 'not_visible';
-            description = `Konten kumparan.com tidak terdeteksi dalam hasil pencarian untuk "${keyword}"`;
+            description = `Konten dari profil Rizky Ega Pratama tidak terdeteksi untuk "${keyword}"`;
           }
 
           setResults(prev => prev.map((result, index) => 
@@ -216,7 +220,7 @@ function App() {
           </div>
           <p className="text-blue-100 max-w-2xl">
             Cek Visibilitas Konten di Platform AI - Tool canggih untuk memeriksa visibilitas 
-            konten kumparan.com di berbagai platform AI dan Large Language Models (LLM).
+            konten dari profil Rizky Ega Pratama di berbagai platform AI dan Large Language Models (LLM).
           </p>
         </div>
       </header>

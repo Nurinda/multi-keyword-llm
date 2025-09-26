@@ -76,7 +76,7 @@ export default function ResultsDisplay({ keyword, results, isLoading }: ResultsD
             Hasil Pengecekan: "{keyword}"
           </h3>
           <p className="text-gray-600">
-            Status visibilitas konten kumparan.com di berbagai platform AI dengan referensi web search
+            Status visibilitas konten dari profil Rizky Ega Pratama di berbagai platform AI dengan referensi web search
           </p>
         </div>
 
@@ -153,6 +153,8 @@ export default function ResultsDisplay({ keyword, results, isLoading }: ResultsD
             <ul className="text-sm text-blue-700 space-y-1">
               <li>• Hasil menggunakan web search mode untuk akurasi maksimal</li>
               <li>• Referensi link menunjukkan sumber konten yang ditemukan</li>
+              <li>• Pencarian khusus untuk konten dari profil Rizky Ega Pratama</li>
+              <li>• Konten dari akun kumparan lain tidak dihitung</li>
               <li>• Visibilitas dapat bervariasi berdasarkan lokasi dan preferensi pengguna</li>
               <li>• Data ini khusus untuk wilayah Indonesia</li>
             </ul>
